@@ -6,7 +6,7 @@ const pickImg = document.querySelector('.gallery');
 pickImg.addEventListener('click', (imgChange) => {
   imgChange.preventDefault();
 
-  const link = imgChange.target.closest('a', 'img');
+  const link = imgChange.target.closest('a');
 
   if (!link) {
     return;
